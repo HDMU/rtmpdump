@@ -3169,7 +3169,7 @@ HandleInvoke(RTMP *r, const char *body, unsigned int nBodySize)
             }
           else if (strstr(pageUrl, "ezcast.tv"))
             {
-              SendCommand(r, "jaSakamCarevataKerka", TRUE);
+              SendCommand(r, "iUsteJaSakamCarevataKerka", TRUE);
               RTMP_SendCreateStream(r);
             }
           else if (strstr(pageUrl, "liveflash.tv"))
@@ -3179,7 +3179,7 @@ HandleInvoke(RTMP *r, const char *body, unsigned int nBodySize)
             }
           else if (strstr(pageUrl, "mips.tv"))
             {
-              SendCommand(r, "gaolVanus", TRUE);
+              SendCommand(r, "gaolVanusPobeleVoKosata", TRUE);
               RTMP_SendCreateStream(r);
             }
           else if (strstr(pageUrl, "ucaster.eu"))
@@ -3195,6 +3195,11 @@ HandleInvoke(RTMP *r, const char *body, unsigned int nBodySize)
           else if (strstr(pageUrl, "yycast.com"))
             {
               SendCommand(r, "trajkoProkopiev", TRUE);
+              RTMP_SendCreateStream(r);
+            }
+         else if (strstr(pageUrl, "janjua.tv"))
+            {
+              SendCommand(r, "soLagaDaSeStoriAga", TRUE);
               RTMP_SendCreateStream(r);
             }
           else if ((strstr(host, "highwebmedia.com") || strstr(pageUrl, "chaturbate.com"))
