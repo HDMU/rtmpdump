@@ -941,7 +941,7 @@ RTMP_Connect0(RTMP *r, struct sockaddr * service)
   r->m_sb.sb_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
   if (r->m_sb.sb_socket != -1)
     {
-+      /* set timeout */
+      /* set timeout */
       {
         SET_RCVTIMEO(tv, r->Link.timeout);
         if (setsockopt
