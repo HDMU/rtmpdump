@@ -3205,6 +3205,11 @@ HandleInvoke(RTMP *r, const char *body, unsigned int nBodySize)
               SendCommand(r, "soLagaDaSeStoriAga", TRUE);
               RTMP_SendCreateStream(r);
             }
+         else if (strstr(pageUrl, "movecast.tv"))
+            {
+              SendCommand(r, "trebaDaSmenamSecurity", TRUE);
+              RTMP_SendCreateStream(r);
+            }
           else if ((strstr(host, "highwebmedia.com") || strstr(pageUrl, "chaturbate.com"))
                    && (!strstr(host, "origin")))
             {
